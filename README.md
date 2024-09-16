@@ -1,49 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Weather App</title>
+    <title>Weather Ap</title>
     <style>
-      h1,
-      h2,
-      h3 {
-        text-align: center;
+      body {
         font-family: Helvetica, Arial, sans-serif;
       }
 
-      h1 {
-        color: #1a64d6;
-        font-size: 34px;
-        line-height: 48px;
-        margin: 0;
-      }
-
-      h2 {
-        margin: 0;
-
-        font-size: 34px;
-        line-height: 48px;
-        font-weight: 400;
-      }
-
-      ul {
-        padding: 0;
-      }
-
-      li {
-        list-style: none;
-        text-align: center;
-        padding: 10px 0;
-        border-radius: 10px;
-        transition: all 200ms ease-in-out;
-        max-width: 400px;
+      .weather {
+        max-width: 300px;
         margin: 0 auto;
       }
 
-      li:hover {
-        background: #fffbef;
+      h1,
+      h2 {
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+      }
+
+      h1 {
+        color: blue
+        #c5264b;
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+        color: #272044;
+        font-weight: 400;
       }
 
       p {
@@ -53,61 +38,77 @@
         font-family: monospace;
       }
 
+      ul {
+        margin: 30px 0;
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        text-align: center;
+      }
+
+      li:hover {
+        background: #fffbef;
+      }
+
       button {
+        border-radius: 25px;
+        text-align: center;
         display: block;
         margin: 20px auto;
-        border: 1px solid #1a64d6;
-        background: #1a64d6;
+        border: 1px solid #c5264b;
+        background: #c5264b;
         color: #fff;
         font-size: 16px;
         line-height: 22px;
         padding: 16px 24px;
-        border-radius: 30px;
+        text-decoration: none;
         transition: all 200ms ease;
         box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
-        cursor: pointer;
       }
 
       button:hover {
-        background: white;
-        color: #1a64d6;
-        border: 1px solid #1a64d6;
+        cursor: pointer;
+        background: #881b34;
       }
     </style>
   </head>
-  <body>
-    <h1>
-      🌤
-      <br />
-      Currently 21° in Tokyo
-    </h1>
-    <h2>13° / <strong>23°</strong></h2>
-    <ul>
-      <li>
-        <h3>
-          🌧Tomorrow
-        </h3>
-        <p>10° / <strong>22°</strong></p>
-      </li>
-      <li>
-        <h3>
-          🌥 Saturday
-        </h3>
-        <p>15° / <strong>17°</strong></p>
-      </li>
-      <li>
-        <h3>
-          ☀️ Sunday
-        </h3>
-        <p>25° / <strong>28°</strong></p>
-      </li>
-    </ul>
 
-    <button>
-      Change city
-    </button>
-    <p>
-      Coded by Matt Delac
-    </p>
+  <body>
+    <div class="weather">
+      <h1>
+        🌤<br />
+        Today in Pretoria 
+      </h1>
+      <h2>13° / <strong>23°</strong></h2>
+      <ul>
+        <li>
+          <h3>
+            🌧Tomorrow
+          </h3>
+          <p>10° / <strong>24°</strong></p>
+        </li>
+        <li>
+          <h3>
+            🌥 Saturday
+          </h3>
+          <p>15° / <strong>20°</strong></p>
+        </li>
+        <li>
+          <h3>
+            ☀️ Sunday
+          </h3>
+          <p>25° / <strong>30°</strong></p>
+        </li>
+      </ul>
+      <button>
+        Change city
+      </button>
+      <p>
+        Coded by Johannah Mathe     </p>
+    </div>
   </body>
 </html>
